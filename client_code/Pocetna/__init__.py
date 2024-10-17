@@ -22,7 +22,13 @@ class Pocetna(PocetnaTemplate):
     # Set Form properties and Data Bindings.
     # Any code you write here will run when the form opens.
     self.init_components(**properties)
+    custom_signup.login_flow.login_with_form()
+    kor=anvil.users.get_user()['email']
     
+    if kor=="" :
+       self.button_2.visible=False
+    else:
+      self.button_2.visible=True
     self.loading_image.visible = False
     self.cover_image.visible = False
     #lib_file = app_files.my_library
@@ -87,7 +93,7 @@ class Pocetna(PocetnaTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     #anvil.users.login_with_form()
-    custom_signup.login_flow.login_with_form()
+    #custom_signup.login_flow.login_with_form()
     #login_flow.login_with_form()
     #open_form('LoginDialog')
     #open_form('Form1')
