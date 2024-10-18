@@ -1,4 +1,4 @@
-/**
+alert-greska/**
  This CSS implements the Material Design look and feel for Anvil apps.
  **/
 
@@ -480,8 +480,8 @@ a:hover, a:active {
   /*background-color: %color:white%; */ 
   box-shadow: none;
   border: none;
-  left: 10px;
-  /* 24dp */ box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2)
+  /*left: 10px;*/
+  /* 24dp */ /*box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2)*/
     !important;
 }
 
@@ -843,7 +843,7 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 }
 
 .anvil-role-alert-greska {
-     /*background-color: red;*/
+     background-color: red;
   color:%color:Primary 700% ;
       position: fixed;
     left: 10px;
