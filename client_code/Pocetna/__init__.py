@@ -21,6 +21,7 @@ class Pocetna(PocetnaTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     # Any code you write here will run when the form opens.
+
     self.init_components(**properties)
     custom_signup.login_flow.login_with_form()
     kor=anvil.users.get_user()['email']
@@ -46,8 +47,8 @@ class Pocetna(PocetnaTemplate):
     #print(self.worksheet.fields)
     #print(self.worksheet)
     
-
     
+
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
