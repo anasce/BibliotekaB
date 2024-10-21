@@ -843,7 +843,7 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 }
 
 .anvil-role-alert-greska {
-     background-color: red;
+     /*background-color: red;*/
   color:%color:Primary 700% ;
       position: fixed;
     left: 10px;
