@@ -13,6 +13,16 @@ import anvil.tables.query as q
 from random import choice
 import custom_signup.login_flow
 
+import anvil.email
+import anvil.users
+import anvil.google.auth, anvil.google.drive, anvil.google.mail
+from anvil.google.drive import app_files
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
+import anvil.server
+import anvil.http
+from datetime import datetime
 
 
 #openpyxl
@@ -46,6 +56,10 @@ class Pocetna(PocetnaTemplate):
     #self.worksheet = lib_file[0]
     #print(self.worksheet.fields)
     #print(self.worksheet)
+
+    r=app_tables.knjige.search()
+    for rr in r:
+      rr["ISBN"]="0-8436-1072-7"
     
     
 
