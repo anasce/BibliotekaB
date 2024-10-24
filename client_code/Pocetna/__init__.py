@@ -59,8 +59,8 @@ class Pocetna(PocetnaTemplate):
 
     r=app_tables.knjige.search()
     for rr in r:
-      #rr["ISBN"]="0-8436-1072-7"
-           rr["ISBN"]=""
+         rr["ISBN"]="0-8436-1072-7"
+         #rr["ISBN"]=""
     
     
 
