@@ -57,9 +57,9 @@ class Pocetna(PocetnaTemplate):
     #print(self.worksheet.fields)
     #print(self.worksheet)
 
-    r=app_tables.knjige.search()
-    for rr in r:
-         rr["ISBN"]="0192817299"
+    #r=app_tables.knjige.search()
+    #for rr in r:
+         #rr["ISBN"]="0192817299"
          #rr["ISBN"]=""
     
     
