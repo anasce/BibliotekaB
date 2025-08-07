@@ -2,27 +2,78 @@ allow_embedding: false
 correct_dependency_ids: {dep_ykcpnvdg9luv6: 4FGAXQOIJKTU36VN}
 db_schema:
   knjige:
-    client: none
+    client: full
     columns:
-    - admin_ui: {order: 0, width: 200}
-      name: Naslov
+    - admin_ui: {width: 200}
+      name: ISBN
       type: string
-    - admin_ui: {order: 1, width: 200}
-      name: Created
+    - admin_ui: {width: 200}
+      name: Аутори
+      type: string
+    - admin_ui: {width: 200}
+      name: Година
+      type: string
+    - admin_ui: {width: 200}
+      name: Задужење
+      type: string
+    - admin_ui: {width: 200}
+      name: Издавач
+      type: string
+    - admin_ui: {width: 200}
+      name: Количина
+      type: string
+    - admin_ui: {width: 200}
+      name: Креирано
       type: datetime
+    - admin_ui: {width: 200}
+      name: Креирање
+      type: datetime
+    - admin_ui: {width: 200}
+      name: Напомена1
+      type: string
+    - admin_ui: {width: 200}
+      name: Напомена2
+      type: string
+    - admin_ui: {width: 844}
+      name: Наслов
+      type: string
+    - admin_ui: {width: 200}
+      name: Полица
+      type: string
+    - admin_ui: {width: 200}
+      name: Рбр
+      type: string
+    - admin_ui: {width: 200}
+      name: напомена1
+      type: string
     server: full
     title: knjige
-  podaci:
-    client: search
+  users:
+    client: none
     columns:
-    - admin_ui: {order: 1, width: 752}
-      name: ExcelFile
-      type: media
-    - admin_ui: {order: 2, width: 200}
-      name: naziv
+    - admin_ui: {width: 200}
+      name: email
+      type: string
+    - admin_ui: {width: 200}
+      name: enabled
+      type: bool
+    - admin_ui: {width: 200}
+      name: last_login
+      type: datetime
+    - admin_ui: {width: 200}
+      name: password_hash
+      type: string
+    - admin_ui: {width: 200}
+      name: n_password_failures
+      type: number
+    - admin_ui: {width: 200}
+      name: confirmed_email
+      type: bool
+    - admin_ui: {width: 200}
+      name: link_key
       type: string
     server: full
-    title: podaci
+    title: Users
 dependencies:
 - dep_id: dep_ykcpnvdg9luv6
   resolution_hints: {app_id: 4FGAXQOIJKTU36VN, name: BibliotekaB prijava, package_name: custom_signup}
