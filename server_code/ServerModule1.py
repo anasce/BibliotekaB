@@ -51,9 +51,14 @@ def search_records(tip_string,search_string):
             if  r['Наслов'].lower().startswith(search_string)] 
 @anvil.server.callable
 def uzmi_knjige():
-    # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
-    #return list(app_tables.knjige.search(tables.order_by("Created", ascending=False)))
-    return list(app_tables.knjige.search(tables.order_by("Креирано", ascending=False)))
+  # Get a list of articles from the Data Table, sorted by 'created' column, in descending order
+  #return list(app_tables.knjige.search(tables.order_by("Created", ascending=False)))
+  try:
+    return list(app_tables.knjige.search(tables.order_by("Kreirano", ascending=False)))# Code that might raise an exception
+
+  except:
+    # Code to handle any exception that occurs in the try block
+    print("An error occurred.")
 
 
 
